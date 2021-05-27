@@ -5,8 +5,8 @@ pipeline {
             environment {
                 DB_HOST = credentials("localhost")
                 DB_DATABASE = credentials("laravel")
-                DB_USERNAME = credentials("laravel-user")
-                DB_PASSWORD = credentials("laravel-password")
+                DB_USERNAME = credentials("root")
+                DB_PASSWORD = credentials("")
             }
             steps {
                 sh 'php --version'
